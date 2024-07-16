@@ -1,0 +1,56 @@
+.about-us-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us-container.light {
+  color: #002244;
+}
+
+.about-us-container.dark {
+  color: #00bfff;
+}
+
+.about-us-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.about-us-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #0066cc, #003366);
+  transform: translateX(-50%);
+}
+
+.about-us-title.dark {
+  color: #00bfff;
+}
+
+.about-us-description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-us-description.dark {
+  color: #00bfff;
+}
+
+.about-us-vision {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.about-us-vision.dark {
+  color: #00bfff;
+}

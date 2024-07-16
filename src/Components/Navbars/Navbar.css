@@ -1,0 +1,259 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: transparent;
+  color: blue;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgb(255, 255, 255);
+  color: blue;
+}
+
+.navbar-light.scrolled {
+  background-color: rgb(255, 255, 255);
+  color: blue;
+}
+
+.navbar-dark.scrolled {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-main {
+  width: 150px;
+}
+
+.logo-secondary {
+  width: 80px;
+  height: 60px;
+  margin-top: 5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: black;
+  font-size: 18px;
+}
+
+.nav-links a {
+  padding: 3px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none; 
+  color: inherit; 
+  display: flex; 
+  align-items: center; 
+}
+
+.nav-links a:hover {
+  background-color: hsl(210, 80%, 96%);
+  color: blue;
+}
+
+.nav-links .active {
+  background-color: hsl(210, 80%, 96%);
+  color: blue;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-right img {
+  width: 24px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar-button {
+  background: transparent;
+  font-size: 16px;
+  color: blue;
+  border: 1px solid;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+
+.navbar-button:hover {
+  background-color: hsl(210, 80%, 96%);
+  border: 1px solid;
+}
+
+.search-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon .notification-dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.navbar-light {
+  background-color: transparent;
+  color: blue;
+}
+
+.navbar-light .nav-links a {
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.navbar-light .nav-links a:hover {
+  color: blue;
+}
+
+.navbar-light.scrolled {
+  background-color: rgb(255, 255, 255);
+  color: blue;
+}
+
+.navbar-dark {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.navbar-dark.scrolled {
+  background-color: #1c1c1c;
+}
+
+.navbar-dark .nav-links a {
+  color: white;
+}
+
+.navbar-dark .navbar-button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.navbar-dark .navbar-button:hover {
+  background-color: white;
+  color: blue;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1001;
+}
+
+/* Light mode styles */
+.mobile-menu-toggle-light {
+  color: black;
+}
+
+/* Dark mode styles */
+.mobile-menu-toggle-dark {
+  color: white;
+}
+@media (max-width: 1096px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+    color: black;
+  }
+
+  .nav-links.dark {
+    background-color: #333;
+    color: white;
+  }
+
+  .nav-links.open {
+    transform: translateY(0%);
+    display: flex;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .search-icon-mobile,
+  .sign-in-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+.navbar-dark .nav-links a {
+  color: white;
+}
+
+.navbar-light .nav-links a {
+  color: rgb(44, 41, 56);
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: blue;
+}
+.navbar-light .nav-links a:hover,
+.navbar-light .nav-links .active {
+  color: blue;
+}
+
+.navbar-dark .nav-links a:hover,
+.navbar-dark .nav-links .active {
+  color: blue;
+}
+.navbar-dark .nav-links .active {
+  color: blue;
+}
+

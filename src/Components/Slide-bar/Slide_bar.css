@@ -1,0 +1,140 @@
+.sidebar {
+  width: 200px;
+  flex: 0 0 200px;
+  height: calc(120vh - 60px);
+  max-height: calc(120vh - 60px);
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.sidebar-section {
+  margin: 20px 0;
+}
+
+.sidebar h3 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.sidebar .form-control-dark {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  padding: 8px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #00f7ff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar .form-control-light {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  padding: 8px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #4207e4;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar .form-control:focus {
+  border-color: #00bfff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .form-check {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.sidebar .form-check-input {
+  margin-right: 10px;
+}
+
+.sidebar .form-check-label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+.sidebar .checkbox-icon {
+  margin-right: 5px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #00bfff;
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #0080ff;
+}
+
+.sidebar.light {
+  border-right: 1px solid #0300c2;
+  background-color: #f8f9fa;
+  color: #0300c2;
+}
+
+.sidebar.light .form-check-input {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+
+.sidebar.light .form-check-input:checked {
+  background-color: #0300c2;
+}
+
+.sidebar.light h3 {
+  color: #0300c2;
+}
+
+.sidebar.light .checkbox-icon {
+  color: #0300c2;
+}
+
+.sidebar.dark {
+  border-right: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #ccc;
+}
+
+.sidebar.dark .form-check-input {
+  background-color: #333;
+  border: 1px solid #555;
+}
+
+.sidebar.dark .form-check-input:checked {
+  background-color: #00bfff;
+}
+
+.sidebar.dark h3 {
+  color: #00bfff;
+}
+
+.sidebar.dark .checkbox-icon {
+  color: #00bfff;
+}
+
+.sidebar.dark::-webkit-scrollbar-track {
+  background-color: #2a2a2a;
+}
+
+.sidebar.dark::-webkit-scrollbar-thumb {
+  background-color: #00bfff;
+}
+
+.sidebar.dark::-webkit-scrollbar-thumb:hover {
+  background-color: #0080ff;
+}

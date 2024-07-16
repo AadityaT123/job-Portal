@@ -1,0 +1,21 @@
+/* Adjusted CSS for .app width based on jobs-active class */
+.app {
+  width: 80%;
+  margin: auto;
+}
+
+.app.jobs-active {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  background-color: #fff; 
+  height: 100%;
+}
+
+.body-text {
+  margin-top: 60px;
+  align-items: right;
+  padding: 20px;
+}

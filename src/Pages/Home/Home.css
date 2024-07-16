@@ -1,0 +1,13 @@
+/* Home.css or appropriate CSS file */
+.countup-section {
+    background-color: #f2f2f2;
+    padding: 50px 0; 
+  }
+  .hom-light p{
+    color: black;
+    font-size: 16px;
+  }
+  .hom-dark p {
+    color: #ffffff;
+    font-size: 16px;
+  }

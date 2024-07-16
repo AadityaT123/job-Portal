@@ -1,0 +1,121 @@
+.body-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.main {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.job-card-dark,
+.job-card-light {
+  width: calc(50% - 20px); /* Two cards per row for large screens */
+  margin-bottom: 10px;
+  margin-right: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles specific to dark theme */
+.job-card-dark {
+  background-color: #1a1a1a;
+  color: #00bfff;
+}
+
+/* Styles specific to light theme */
+.job-card-light {
+  background-color: #f8f9fa;
+  color: #0300b1;
+}
+
+.job-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.job-company {
+  font-size: 0.875rem;
+  margin: 5px 0;
+}
+
+.job-description {
+  font-size: 0.75rem;
+  margin: 5px 0;
+}
+
+.job-category {
+  font-size: 0.875rem;
+  margin: 5px 0;
+}
+
+/* Button styles */
+.button-dark {
+  background-color: #00bfff;
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-dark:hover {
+  background-color: #1a1a1a;
+  color: #00bfff;
+}
+
+.button-light {
+  background-color: #0300b1;
+  color: #f8f9fa;
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-light:hover {
+  background-color: #3a92eb;
+  color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1409px) {
+  .job-card-dark,
+  .job-card-light {
+    width: calc(50% - 20px); 
+    margin-right: 10px; 
+  }
+}
+
+@media (max-width: 1096px) {
+  .sidebar {
+    display: none;
+  }
+  .job-card-dark,
+  .job-card-light {
+    width: calc(100% - 20px); 
+    margin-right: 0;
+  }
+  .body-text {
+    margin-left: 0;
+    width: 100%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .body-text::after {
+    content: '';
+    flex: auto;
+  }
+}

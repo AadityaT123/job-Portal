@@ -1,0 +1,49 @@
+.text-write-container {
+    text-align: center;
+    padding: 5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-write-container-light {
+    background: linear-gradient(to right, #f0f4f8, #d9e1e8);
+  }
+  
+  .text-write-container-dark {
+    background: linear-gradient(to right, #2c3e50, #4a6073);
+  }
+  
+  .text-write-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .text-write-highlight {
+    font-weight: 700;
+  }
+  
+  .text-write-heading-light {
+    color: #333;
+  }
+  
+  .text-write-heading-dark {
+    color: #f0f4f8;
+  }
+  
+  .text-write-highlight-light {
+    color: #1e90ff;
+  }
+  
+  .text-write-highlight-dark {
+    color: #00bfff;
+  }
+  
+  .typewriter-text-light {
+    color: #002ec7 !important;
+  }
+  
+  .typewriter-text-dark {
+    color: inherit !important;
+  }
+  

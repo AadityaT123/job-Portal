@@ -1,0 +1,33 @@
+.logo-slider {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.logo-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-slide img {
+  max-width: 150px; 
+  max-height: 60px; 
+  object-fit: contain;
+}
+
+/* Dark theme styling */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-theme .logo-slider {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px 0; 
+}
+
+body.dark-theme .logo-slide img {
+  filter: brightness(0) invert(1);
+}

@@ -1,0 +1,105 @@
+.job-card-dark,
+.job-card-light {
+  width: calc(50% - 20px); 
+  margin-bottom: 10px;
+  margin-right: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+
+}
+
+/* Styles specific to dark theme */
+.job-card-dark {
+  background-color: #1a1a1a;
+  color: #00bfff;
+  transition: background-color 0.3s ease;
+
+}
+
+.job-card-light {
+  background-color: #f8f9fa;
+  color: #0300b1;
+  transition: background-color 0.3s ease;
+
+}
+.theme-dark p{ 
+  background-color: #1a1a1a;
+  color: #00bfff;
+  transition: background-color 0.3s ease;
+
+}
+.theme-light p {
+  background-color: #f8f9fa;
+  color: #0300b1;
+  transition: background-color 0.3s ease;
+
+}
+
+.job-title {
+  font-size: 20px;
+  margin: 0;
+  transition: background-color 0.3s ease;
+
+}
+
+.job-company {
+  font-size: 0.875rem;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+
+}
+
+.job-description {
+  font-size: 0.75rem;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+
+}
+
+.job-category {
+  font-size: 0.875rem;
+  margin: 5px 0;
+}
+
+.button-dark {
+  background-color: #00bfff;
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-dark:hover {
+  background-color: #1a1a1a;
+  color: #00bfff;
+}
+
+/* Button styles for light mode */
+.button-light {
+  background-color: #0300b1;
+  color: #f8f9fa;
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-light:hover {
+  background-color: #3a92eb;
+  color: #000000;
+}
+
+/* Apply button container */
+.apply-button-container {
+  display: flex;
+  justify-content: flex-end; /* Align button to the right */
+  margin-top: 10px; /* Adjust margin as needed */
+}

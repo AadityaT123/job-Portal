@@ -1,0 +1,73 @@
+.admin-portal {
+  padding: 20px;
+  background-color: #fff; 
+  margin-top: 60px;
+}
+
+.admin-portal.dark {
+  background-color: #333; 
+  color: #fff;
+}
+
+.admin-portal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-portal input,
+.admin-portal textarea,
+.admin-portal select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.admin-portal input::placeholder,
+.admin-portal textarea::placeholder {
+  color: #999;
+}
+
+.admin-portal.dark input::placeholder,
+.admin-portal.dark textarea::placeholder {
+  color: #00bfff; 
+}
+
+.admin-portal button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-portal.dark button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #00bfff;
+}
+
+.admin-portal button:hover {
+  background-color: #0056b3;
+}
+
+.admin-portal.dark button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.posted-jobs {
+  margin-top: 20px;
+}
+
+.posted-jobs table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.posted-jobs th,
+.posted-jobs td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}

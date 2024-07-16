@@ -1,0 +1,297 @@
+.login-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+  transition:  0.3s ease;
+
+}
+
+.login-popup-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.login-popup-title h2 {
+  margin: 0;
+  font-size: 20px;
+  color: black;
+}
+
+.login-popup-close-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.login-popup-input input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.upload-cv-section {
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  background-color: #f0f8ff;
+  color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  text-align: center;
+  height: 80px;
+  overflow: hidden;
+}
+
+.upload-cv-section:hover {
+  background-color: #e6f0ff;
+  border-color: #0056b3;
+}
+
+.upload-cv-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-cv-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.upload-cv-text p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.upload-cv-text small {
+  color: #6c757d;
+}
+
+.upload-cv-label {
+  display: inline-block;
+  width: 100%;
+  padding: 0; 
+  border: none; 
+  background-color: transparent;
+  color: #007bff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.upload-cv-label:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.upload-cv-input {
+  display: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.login-popup-condition {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.login-popup-condition p {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+p {
+  color: #333;
+  font-size: 12px;
+}
+
+span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+span:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .login-popup-title h2 {
+    font-size: 18px;
+  }
+
+  .login-popup-input input {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .login-popup-condition p {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .upload-cv-text p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-popup-container {
+    padding: 15px;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .login-popup-title h2 {
+    font-size: 16px;
+  }
+
+  .login-popup-input input {
+    padding: 6px;
+    margin-bottom: 6px;
+  }
+
+  button {
+    padding: 6px;
+    font-size: 10px;
+  }
+
+  .login-popup-condition p {
+    font-size: 8px;
+  }
+
+  p {
+    font-size: 8px;
+  }
+
+  .upload-cv-text p {
+    font-size: 10px;
+  }
+}
+
+.login-popup-container-light {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.login-popup-input-light input {
+  border: 1px solid #ddd;
+}
+
+.upload-cv-section-light {
+  background-color: #f0f8ff;
+  color: #007bff;
+  border: 2px dashed #007bff;
+}
+
+.upload-cv-section-light:hover {
+  background-color: #e6f0ff;
+  border-color: #0056b3;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.login-popup-condition p {
+  color: #333;
+}
+
+span {
+  color: #007bff;
+}
+
+.login-popup-container-dark {
+  background-color: #1c1c1c;
+  color: #00bfff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.login-popup-input-dark input {
+  border: 1px solid #555;
+}
+
+.upload-cv-section-dark {
+  background-color: #333;
+  color: #00bfff;
+  border: 2px dashed #00bfff;
+}
+
+.upload-cv-section-dark:hover {
+  background-color: #555;
+  border-color: #007bff;
+}
+
+button {
+  background-color: #00bfff;
+  color: white;
+}
+
+button:hover {
+  background-color: #007bff;
+}
+
+.login-popup-condition p {
+  color: #ccc;
+}
+
+span {
+  color: #00bfff;
+}
